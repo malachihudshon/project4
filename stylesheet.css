@@ -1,4 +1,4 @@
-p{
+h1{
 	font-size:75px;
 	text-align:center;
 }
@@ -9,6 +9,7 @@ body{
 .grid{
 	display: grid;
 	grid-template-columns:1fr 1fr 1fr 1fr  ;
+	grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 
 	grid-gap:1vh;
 	border:1px black solid ;
 }
@@ -28,7 +29,7 @@ body{
 		font-size:3em;
 		text-align:center;
 		grid-column-start:1;
-	grid-column-end:span 1;
+	    grid-column-end:span 1;
 		
 	}
 	.bob{
@@ -59,5 +60,19 @@ body{
 button {
 		font-size:1em;
 	}
+	.trench{ 
+	padding:1em ;
+		font-size:3em;
+		grid-column-start:1;
+		grid-column-end:span 2;
+	    grid-row-start:2;
+		grid-row-end:span 4;
+	}
+	.maby{ 
+		padding:1em ;
+		grid-column-start:3;
+		grid-column-end:span 2;
+	    grid-row-start:2;
+		grid-row-end:span 4;
 	
-	
+	}
